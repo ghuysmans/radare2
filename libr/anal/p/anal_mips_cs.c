@@ -194,6 +194,9 @@ static int analop_esil(RAnal *a, RAnalOp *op, ut64 addr, const ut8 *buf, int len
 		case MIPS_INS_NOP:
 			r_strbuf_setf (&op->esil, ",");
 			break;
+		case MIPS_INS_SYSCALL:
+			r_strbuf_setf (&op->esil, "0,$");
+			break;
 		case MIPS_INS_BREAK:
 			r_strbuf_setf (&op->esil, "%d,%d,TRAP", IMM (0), IMM (0));
 			break;
