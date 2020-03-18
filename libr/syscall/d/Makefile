@@ -21,6 +21,7 @@ F+= openbsd-x86-32
 F+= openbsd-x86-64
 F+= windows-x86-32
 F+= windows-x86-64
+F+= spim-mips-32
 
 include $(TOP)/config-user.mk
 HOST_CC?=gcc
