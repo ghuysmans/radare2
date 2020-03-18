@@ -213,7 +213,7 @@ static int analop_esil(RAnal *a, RAnalOp *op, ut64 addr, const ut8 *buf, int len
 			break;
 		case MIPS_INS_SWC1:
 		case MIPS_INS_SWC2:
-			r_strbuf_setf (&op->esil, "%s,$", ARG (1));
+			r_strbuf_setf (&op->esil, "TODO");
 			break;
 		case MIPS_INS_SB:
 			r_strbuf_appendf (&op->esil, "%s,%s,=[1]",
